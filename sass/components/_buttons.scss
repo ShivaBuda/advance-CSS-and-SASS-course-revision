@@ -55,3 +55,27 @@ $light-grey: #e6e6e6;
         background-color: $lighter-stone;
     }
 }
+
+.btn-txt {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: $primry-green;
+        border-bottom: 1px solid $primry-green;
+        transition: all 0.2s ease-out;
+        padding: 0.4rem 0.8rem;
+        border-radius: .2rem;
+        // For transform: translateY(-3px)
+        display: inline-block;
+    }
+    &:hover {
+        background-color: $primry-green;
+        color: $lighter-stone;
+        box-shadow: 0 1rem 2rem rgba($dark-stone, 0.3);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0 0.5rem 1rem rgba($dark-stone, 0.3);
+        transform: translateY(0);
+    }
+}

@@ -12,14 +12,14 @@ $gutter-horizontal: 6rem;
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-    background-color: rgb(212, 211, 211);
+    // background-color: rgb(212, 211, 211);
     &:not(:last-child) {
         margin-bottom: $gutter-horizontal;
     }
     @include clearfix;
 
     [class^="col-"] {
-        background-color: rgb(103, 139, 103);
+        // background-color: rgb(103, 139, 103);
         float: left;
 
         &:not(:last-child) {

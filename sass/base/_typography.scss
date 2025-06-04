@@ -12,6 +12,7 @@ $secondary-green: #33cc0c;
 $dark-grey: #333333;
 $medium-grey: #666666;
 $light-grey: #e6e6e6;
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -37,4 +38,32 @@ body {
     letter-spacing: 1rem;
     font-weight: 600;
     animation: moveInRight 1s ease-out;
+}
+
+.heading-secondary {
+    background-image: linear-gradient(to right, $primary-lime, $secondary-lime);
+    background-clip: text;
+    color: transparent;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 0.8rem 2rem rgba($dark-stone, $alpha: 0.3);
+    }
+}
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
 }
