@@ -1,0 +1,33 @@
+$light-grey: #e6e6e6;
+$light-stone: #57534e;
+
+.feature-box {
+    font-size: 1.4rem;
+    color: $light-stone;
+    text-align: center;
+    background-color: $light-grey;
+    padding: 2.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.3);
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        transform: translateY(-4px) scale(1.02);
+    }
+
+    &__icon {
+        background-image: linear-gradient(
+            to right,
+            rgba(131, 204, 22, 0.751),
+            rgba(100, 163, 13, 0.279)
+        );
+        background-clip: text;
+        color: transparent;
+        font-size: 3.2rem;
+        display: inline-block;
+        margin-bottom: 0.8rem;
+    }
+    &__txt{
+     font-size: 1.4rem;
+    }
+}
