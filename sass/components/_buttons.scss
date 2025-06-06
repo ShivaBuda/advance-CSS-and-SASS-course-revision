@@ -27,6 +27,15 @@ $light-grey: #e6e6e6;
         animation: moveInBottom 0.5s ease-out 0.7s;
         animation-fill-mode: backwards;
     }
+
+    &--green:link,
+    &--green:visited{
+        background-color: $primry-green ;
+        color: $lighter-stone;
+
+        &::after{background-color: $primry-green;}
+    }
+    
     &:hover {
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -55,6 +64,7 @@ $light-grey: #e6e6e6;
         background-color: $lighter-stone;
     }
 }
+
 
 .btn-txt {
     &:link,

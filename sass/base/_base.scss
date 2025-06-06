@@ -20,8 +20,11 @@ $light-grey: #e6e6e6;
     padding: 0;
     box-sizing: inherit;
 }
-a {
+a:link {
     text-decoration: none;
+}
+li{
+    list-style: none;
 }
 
 html {

@@ -7,7 +7,7 @@ $lighter-stone: #fafaf9;
     padding-bottom: 35rem;
 }
 
-.section-features{
+.section-features {
     background-image: linear-gradient(
             to right bottom,
             rgba(131, 204, 22, 0.751),
@@ -18,9 +18,15 @@ $lighter-stone: #fafaf9;
     background-size: cover;
     padding: 20rem 0;
     transform: skewY(-7deg);
+    margin-top: -8.5rem;
 
-    &>*{
+    & > * {
         transform: skewY(7deg);
     }
-    margin-top: -8.5rem;
+}
+
+.section-tours {
+    background-color: $lighter-stone;
+    padding: 25rem 0;
+    margin-top: -9rem;
 }
