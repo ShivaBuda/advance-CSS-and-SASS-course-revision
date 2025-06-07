@@ -60,9 +60,12 @@ body {
 .heading-tertiary{
     font-size: 1.6rem;
     text-transform: uppercase;
+    color: $medium-grey;
 }
 .paragraph{
     font-size: 1.6rem;
+    color: $medium-grey;
+    font-size: 1.4rem;
 
     &:not(:last-child){
         margin-bottom: 3rem;
