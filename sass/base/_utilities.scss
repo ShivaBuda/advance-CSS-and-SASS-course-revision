@@ -1,16 +1,20 @@
 .u-center-txt {
-    text-align: center;
+    text-align: center !important;
 }
 
-.u-mb-sm{
-    margin-bottom: 1.4rem;
+.u-mb-xm {
+    margin-bottom: 1.4rem !important;
 }
-.u-mb-md{
-    margin-bottom: 4.5rem
+
+.u-mb-sm {
+    margin-bottom: 2.8rem;
+}
+.u-mb-md {
+    margin-bottom: 4.8rem !important;
 }
 .u-mb-bg {
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
 }
 .u-mt-bg {
-    margin-top: 8rem;
+    margin-top: 8rem !important;
 }

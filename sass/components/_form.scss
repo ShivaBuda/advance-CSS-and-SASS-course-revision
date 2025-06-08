@@ -1,0 +1,86 @@
+$dark-stone: #1c1917;
+$primary-lime: #84cc16;
+
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+    &__input {
+        border: none;
+        font-size: 1.4rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1rem 2rem;
+        border-bottom: 2px solid transparent;
+        transition: border 0.3s ease-in;
+
+        // display: block;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($dark-stone, 0.1);
+            border-bottom: 2px solid $primary-lime;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid red;
+        }
+    }
+    &__label {
+        font-size: 1.2rem;
+        display: block;
+        margin-top: .4rem;
+        margin-left: 1.9rem;
+        color: rgba($dark-stone, 0.6);
+        transition: all 0.3s ease-in;
+    }
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3.8rem);
+    }
+
+    &__radio {
+        &-input {
+            display: none;
+        }
+        &-group {
+            width: 49%;
+            display: inline-block;
+        }
+        &-label {
+            font-size: 1.4rem;
+            cursor: pointer;
+            position: relative;
+            padding-left: 4rem;
+        }
+        &-btn {
+            display: inline-block;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 5rem;
+            border: 4px solid $primary-lime;
+            position: absolute;
+            top: -0.7rem;
+            left: 0;
+
+            &::after {
+                content: "";
+                display: block;
+                border: 6px solid $primary-lime;
+                height: 1rem;
+                width: 1rem;
+                border-radius: 5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.2s ease-in;
+            }
+        }
+        &-input:checked ~ &-label &-btn::after {
+            opacity: 1;
+        }
+    }
+}

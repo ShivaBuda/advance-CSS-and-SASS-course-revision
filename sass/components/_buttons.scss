@@ -13,6 +13,7 @@ $dark-grey: #333333;
 $medium-grey: #666666;
 $light-grey: #e6e6e6;
 .btn {
+    &,
     &:link,
     &:visited {
         color: $medium-grey;
@@ -26,16 +27,23 @@ $light-grey: #e6e6e6;
         position: relative;
         animation: moveInBottom 0.5s ease-out 0.7s;
         animation-fill-mode: backwards;
+
+        border: none;
     }
 
+    &,
     &--green:link,
-    &--green:visited{
-        background-color: $primry-green ;
+    &--green:visited {
+        background-color: $primry-green;
         color: $lighter-stone;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
 
-        &::after{background-color: $primry-green;}
+        &::after {
+            background-color: $primry-green;
+        }
     }
-    
+
     &:hover {
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -47,6 +55,7 @@ $light-grey: #e6e6e6;
         }
     }
     &:active {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
@@ -65,7 +74,6 @@ $light-grey: #e6e6e6;
     }
 }
 
-
 .btn-txt {
     &:link,
     &:visited {
@@ -74,7 +82,7 @@ $light-grey: #e6e6e6;
         border-bottom: 1px solid $primry-green;
         transition: all 0.2s ease-out;
         padding: 0.4rem 0.8rem;
-        border-radius: .2rem;
+        border-radius: 0.2rem;
         // For transform: translateY(-3px)
         display: inline-block;
     }

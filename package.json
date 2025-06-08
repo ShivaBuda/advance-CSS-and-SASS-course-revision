@@ -8,7 +8,7 @@
     },
     "author": "Shiv Buda",
     "license": "ISC",
-    "devDependencies": {
+    "dependencies": {
         "sass": "^1.89.1"
     }
 }
