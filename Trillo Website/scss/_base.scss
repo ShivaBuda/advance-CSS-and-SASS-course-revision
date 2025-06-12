@@ -1,4 +1,5 @@
 :root {
+    // COLORS
     --color-rose-dark: #9f1239;
     --color-rose-medium: #be123c;
     --color-rose-light: #e11d48;
@@ -7,9 +8,12 @@
     --color-gray-medium: #1f2937;
     --tertiary-gray-light: #4b5563;
 
-    --color-gray-light-1: #f9fafb;
+    --color-gray-light-1: #9ca3af;
     --color-gray-light-2: #e5e7eb;
-    --color-gray-light-3: #9ca3af;
+    --color-gray-light-3: #f9fafb;
+
+    // SHADOW
+    --shadow-box: 0 1rem 4rem rgba(0,0,0, .2)
 }
 *,
 *::after,
@@ -43,4 +47,5 @@ body {
     font-style: normal;
     font-variation-settings: ("wdth" 100);
     min-height: 100vh;
+    color: var(--tertiary-gray-light);
 }

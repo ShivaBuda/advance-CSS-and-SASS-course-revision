@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trillo |</title>
+        <title>Trillo| All-in-one booking app</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -11,5 +11,52 @@
             rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="Hotel logo" />
+                </a>
+                <form action="#" class="search">
+                    <input
+                        type="text"
+                        class="search__input"
+                        placeholder="Search hotel" />
+                    <button class="search__btn">
+                        <svg class="search__icon">
+                            <use
+                                xlink:href="./images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use
+                                xlink:href="./images/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">77</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use
+                                xlink:href="./images/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">33</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img
+                            src="./images/user.jpg"
+                            alt="User photo"
+                            class="user-nav__user-photo" />
+                        <span class="user-nav__name">Jonas</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="side-nav"></nav>
+                <main class="hotel-page">Hatel page</main>
+            </div>
+        </div>
+    </body>
 </html>
