@@ -15,6 +15,14 @@
     // SHADOW
     --shadow-box: 0 1rem 4rem rgba(0, 0, 0, 0.2);
 }
+
+// **** BREAKPOINTS VARIABLES *****
+
+$breakpoint-xl: 75em; //1200px
+$breakpoint-lg: 68.75em; // 1100px
+$breakpoint-md: 60rem; // 960px
+$breakpoint-sm: 48.75rem; // 780px
+$breakpoint-xm:31.25rem; // 500px
 *,
 *::after,
 *::before {
@@ -31,6 +39,12 @@ li {
 
 html {
     font-size: 62.5%;
+    @media only screen and (max-width: $breakpoint-lg) {
+        font-size: 56.25%;
+    }
+    @media only screen and (max-width: $breakpoint-sm) {
+        font-size: 50%;
+    }
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -40,7 +54,6 @@ body {
         var(--color-rose-light),
         var(--color-rose-light)
     );
-    padding: 3rem;
     letter-spacing: 1.2px;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -49,5 +62,3 @@ body {
     min-height: 100vh;
     color: var(--tertiary-gray-light);
 }
-
-
