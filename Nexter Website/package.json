@@ -1,0 +1,14 @@
+{
+    "name": "nexter-website",
+    "version": "1.0.0",
+    "description": "Udemy Advance CSS and Sass course ",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass scss/main.scss css/styles.css -w"
+    },
+    "author": "Shiv Buda",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.89.1"
+    }
+}

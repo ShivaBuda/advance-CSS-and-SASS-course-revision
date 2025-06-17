@@ -1,0 +1,57 @@
+:root {
+    // COLORS
+    --color-yellow-primary: #f0b100;
+    --color-yellow-secondary: #d08700;
+    --color-yellow-dark: #432004;
+    --color-yellow-dark-light: #713f12;
+
+    --color-stone-dark: #0c0a09;
+    --color-stone-medium: #292524;
+    --tertiary-stone-light: #57534e;
+
+    --color-gray-light-1: #9ca3af;
+    --color-gray-light-2: #e5e7eb;
+    --color-gray-light-3: #f9fafb;
+
+    // FONT FAMILIES
+    $font-primary: "Nunito", sans-serif;
+    $font-secondary: "Josefin Sans", sans-serif;
+
+    // SHADOW
+    --shadow-box: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+// **** BREAKPOINTS VARIABLES *****
+
+$breakpoint-xl: 75em; //1200px
+$breakpoint-lg: 68.75em; // 1100px
+$breakpoint-md: 60rem; // 960px
+$breakpoint-sm: 48.75rem; // 780px
+$breakpoint-xm: 31.25rem; // 500px
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+a:link {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-primary;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1.2px;
+    min-height: 100vh;
+    color: var(--color-yellow-dark-light);
+}
