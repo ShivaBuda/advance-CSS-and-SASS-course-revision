@@ -13,13 +13,12 @@
     --color-gray-light-2: #e5e7eb;
     --color-gray-light-3: #f9fafb;
 
-    // FONT FAMILIES
-    $font-primary: "Nunito", sans-serif;
-    $font-secondary: "Josefin Sans", sans-serif;
-
     // SHADOW
     --shadow-box: 0 1rem 4rem rgba(0, 0, 0, 0.2);
 }
+// FONT FAMILIES
+$font-primary: "Nunito", sans-serif;
+$font-secondary: "Josefin Sans", sans-serif;
 
 // **** BREAKPOINTS VARIABLES *****
 
@@ -54,4 +53,10 @@ body {
     letter-spacing: 1.2px;
     min-height: 100vh;
     color: var(--color-yellow-dark-light);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+    grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 15rem)) 1fr;
 }
