@@ -20,6 +20,23 @@
 $font-primary: "Nunito", sans-serif;
 $font-secondary: "Josefin Sans", sans-serif;
 
+// MARGIN
+.mb-sm {
+    margin-bottom: 1.2rem;
+}
+.mb-md {
+    margin-bottom: 2.4rem;
+}
+.mb-bg {
+    margin-bottom: 3.2rem;
+}
+.mb-lg {
+    margin-bottom: 4.8rem;
+}
+.mb-xl {
+    margin-bottom: 6.4rem;
+}
+
 // **** BREAKPOINTS VARIABLES *****
 
 $breakpoint-xl: 75em; //1200px
@@ -57,6 +74,6 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 80vh min-content 40vh repeat(3, min-content);
+    grid-template-rows: 80vh min-content 60vh repeat(3, min-content);
     grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 15rem)) 1fr;
 }

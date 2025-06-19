@@ -1,12 +1,47 @@
-.story{
-     &__pictures{
-          grid-row: 3/4;
-          grid-column: 2 /7;
-          background-color: peru;
-     }
-     &__content{
-           grid-row: 3/4;
-          grid-column: 7 /-1;
-          background-color: palegreen;
-     }
+.story {
+    &__pictures {
+        grid-row: 3/4;
+        grid-column: 2 /7;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+
+        background-image: linear-gradient(
+                rgba(240, 176, 0, 0.566),
+                rgba(208, 135, 0, 0.5)
+            ),
+            url("../images/back.jpg");
+            background-position: center;
+            background-size: cover;
+    }
+    &__img-1 {
+        width: 100%;
+        grid-row: 2/6;
+        grid-column: 2/6;
+        box-shadow: 0 2rem 3rem rgba(#000, 0.1);
+    }
+    &__img-2 {
+        width: 115%;
+        grid-row: 3/7;
+        grid-column: 4/7;
+        z-index: 2;
+        box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.2);
+    }
+    &__content {
+        grid-row: 3/4;
+        grid-column: 7 /-1;
+        padding: 6.2rem 8vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__txt {
+        margin-bottom: 2.4rem;
+        font-size: 1.3rem;
+    }
 }

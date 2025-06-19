@@ -8,9 +8,21 @@
 }
 .heading-2 {
     @extend %heading;
+
+    font-size: 3.2rem;
+    font-style: italic;
+
+    &--dark {
+        color: var(--color-yellow-dark);
+    }
+    &--light {
+        color: var(--color-yellow-dark-light);
+    }
 }
 .heading-3 {
     @extend %heading;
+    text-transform: uppercase;
+    color: var(--color-yellow-primary);
 }
 .heading-4 {
     @extend %heading;
@@ -21,5 +33,20 @@
     }
     &--dark {
         color: var(--color-yellow-dark);
+    }
+}
+
+.btn {
+    border: none;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--color-yellow-dark-light);
+    color: var(--color-gray-light-3);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--color-yellow-secondary);
     }
 }
