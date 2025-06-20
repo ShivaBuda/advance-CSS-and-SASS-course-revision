@@ -1,5 +1,32 @@
 .sidebar {
-    grid-row: 1/-1;
+    grid-row: 1 / span 8;
     grid-column: 1/2;
-    background-color: pink;
+    background-color: var(--color-yellow-secondary);
+    text-align: center;
+
+    &__nav-icon {
+        border: none;
+        background-color: var(--color-gray-light-3);
+        width: 3.2rem;
+        height: 2px;
+        margin-top: 4.8rem;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+        }
+
+        &::before {
+            transform: translateY(-1.2rem);
+        }
+
+        &::after {
+            transform: translateY(1rem);
+        }
+    }
 }

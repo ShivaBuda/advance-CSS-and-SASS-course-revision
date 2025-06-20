@@ -1,6 +1,35 @@
-.footer{
-     grid-row: 8/-1;
-     grid-column: 2/-1;
-     background-color: darkgray;
-     padding: 14rem;
+.footer {
+    grid-row: 8/-1;
+    grid-column: 2/-1;
+    background-color: var(--color-stone-dark);
+    padding: 10rem;
+
+    &__nav-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, max-content));
+        gap: 2rem;
+    }
+
+    &__nav-link:link,
+    &__nav-link:visited {
+        color: var(--color-gray-light-2);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        padding: 1.2rem;
+        display: block;
+        text-align: center;
+        transition: all .2s ease-in;
+    }
+    &__nav-link:hover,
+    &__nav-link:active{
+     background-color: var(--color-stone-medium);
+     transform: translateY(-3px);
+    }
+
+    &__copyright{
+     text-align: center;
+     font-size: 1.1rem;
+     color: var(--color-gray-light-1);
+     margin-top: 3.2rem;
+    }
 }
