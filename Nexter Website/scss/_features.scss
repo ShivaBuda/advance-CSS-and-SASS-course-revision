@@ -1,11 +1,12 @@
 .features {
     grid-row: 2/3;
     grid-column: 3/11;
+    padding: 15rem 4.8rem;
+    background-color: #fff;
 
     display: grid;
     // grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    margin: 15rem 0;
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
     gap: 6.2rem;
     align-items: start;
 }

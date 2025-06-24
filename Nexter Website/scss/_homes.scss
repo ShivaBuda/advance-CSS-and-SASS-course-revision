@@ -12,6 +12,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
+    background-color: var(--color-gray-light-2);
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.05);
     &__img {
         width: 100%;
         grid-column: 1/-1;
@@ -51,18 +53,17 @@
         display: flex;
         gap: 1.2rem;
         align-items: center;
-        margin-left: 3.2rem;;
-     //    justify-content: center;
+        margin-left: 3.2rem;
+        //    justify-content: center;
 
         font-size: 1.2rem;
         font-weight: 500;
-       
+
         svg {
             width: 2rem;
             height: 2rem;
             fill: var(--color-yellow-secondary);
         }
-        
     }
     .cta {
         grid-column: 1/-1;

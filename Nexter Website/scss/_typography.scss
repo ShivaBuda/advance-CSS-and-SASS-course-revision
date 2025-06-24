@@ -5,6 +5,8 @@
 }
 .heading-1 {
     @extend %heading;
+    font-size: 4rem;
+    color: var(--color-gray-light-3);
 }
 .heading-2 {
     @extend %heading;
@@ -27,16 +29,18 @@
 .heading-4 {
     @extend %heading;
     font-size: 1.8rem;
+    // color: var(--color-gray-light-3);
 
-    &--ligt {
-        color: var(--color-yellow-dark-light);
+    &--light {
+        color: var(--color-gray-light-3);
     }
     &--dark {
         color: var(--color-yellow-dark);
     }
 }
 
-.btn, .cta {
+.btn,
+.cta {
     border: none;
     padding: 1.2rem 2.4rem;
     font-size: 1.6rem;
