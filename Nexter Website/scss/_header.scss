@@ -1,17 +1,21 @@
+@use "./base" as *;
 .header {
-    grid-row: 1/2;
-    grid-column: 2/9;
+    grid-column: full-start/ col-end 6;
     background-image: linear-gradient(rgba(#0c0a09, 0.8), rgba(#0c0a09, 0.7)),
         url("../images/hero.jpeg");
     background-position: center;
     background-size: cover;
 
     display: grid;
-    grid-template-rows: 1fr min-content 7vh 1fr;
+    grid-template-rows: 1fr min-content minmax(7vh, min-content) 1fr;
     grid-template-columns: minmax(min-content, max-content);
     justify-content: center;
     gap: 1.2rem;
     padding: 6.4rem;
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        grid-column: full-start / full-end;
+    }
 
     &__logo {
         height: 4rem;
@@ -36,7 +40,6 @@
             content: "";
             background-color: currentColor;
             height: 1px;
-            // border-bottom: 1px solid var(--color-gray-light-2)
         }
     }
     &__seenon-logos {

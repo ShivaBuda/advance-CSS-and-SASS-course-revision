@@ -1,8 +1,18 @@
+@use "./base" as *;
 .sidebar {
     grid-row: 1 / span 8;
-    grid-column: 1/2;
+    grid-column: sidebar-start / sidebar-end;
     background-color: var(--color-yellow-secondary);
     text-align: center;
+    z-index: 3;
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-row: 1 / 2;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
     &__nav-icon {
         border: none;
@@ -11,6 +21,11 @@
         height: 2px;
         margin-top: 4.8rem;
         cursor: pointer;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            margin-top: 0;
+            margin-right: 3.2rem;
+        }
 
         &::before,
         &::after {

@@ -39,11 +39,10 @@ $font-secondary: "Josefin Sans", sans-serif;
 
 // **** BREAKPOINTS VARIABLES *****
 
-$breakpoint-xl: 75em; //1200px
 $breakpoint-lg: 68.75em; // 1100px
 $breakpoint-md: 60rem; // 960px
-$breakpoint-sm: 48.75rem; // 780px
-$breakpoint-xm: 31.25rem; // 500px
+$breakpoint-sm: 43.75rem; // 700px
+$breakpoint-xs: 31.25rem; // 500px
 *,
 *::after,
 *::before {
@@ -61,6 +60,14 @@ li {
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+        font-size: 50%;
+    }
 }
 body {
     font-family: $font-primary;
@@ -75,5 +82,24 @@ body {
 .container {
     display: grid;
     grid-template-rows: 80vh min-content 60vh repeat(3, min-content);
-    grid-template-columns: 8rem 1fr repeat(8, minmax(min-content, 15rem)) 1fr;
+    grid-template-columns:
+        [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(
+            8,
+            [col-start] minmax(min-content, 15rem) [col-end]
+        )
+        [center-end] 1fr [full-end];
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-rows: 8rem 80vh min-content 60vh repeat(3, min-content);
+        grid-template-columns:
+            [full-start] 1fr [center-start ]repeat(
+                8,
+                [col-start] minmax(min-content, 15rem) [col-end]
+            )
+            [center-end] 1fr [full-end];
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        grid-template-rows: 8rem calc(100vh - 8rem);
+    }
 }

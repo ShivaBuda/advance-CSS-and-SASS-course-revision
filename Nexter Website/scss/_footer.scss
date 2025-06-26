@@ -1,8 +1,12 @@
+@use "./base" as *;
 .footer {
-    grid-row: 8/-1;
     grid-column: 2/-1;
     background-color: var(--color-stone-dark);
     padding: 10rem;
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        padding: 7.2rem;
+    }
 
     &__nav-list {
         display: grid;
@@ -18,18 +22,18 @@
         padding: 1.2rem;
         display: block;
         text-align: center;
-        transition: all .2s ease-in;
+        transition: all 0.2s ease-in;
     }
     &__nav-link:hover,
-    &__nav-link:active{
-     background-color: var(--color-stone-medium);
-     transform: translateY(-3px);
+    &__nav-link:active {
+        background-color: var(--color-stone-medium);
+        transform: translateY(-3px);
     }
 
-    &__copyright{
-     text-align: center;
-     font-size: 1.1rem;
-     color: var(--color-gray-light-1);
-     margin-top: 3.2rem;
+    &__copyright {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--color-gray-light-1);
+        margin-top: 3.2rem;
     }
 }
